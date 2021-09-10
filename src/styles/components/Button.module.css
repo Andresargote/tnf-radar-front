@@ -1,0 +1,17 @@
+.buttonGreen {
+  background: var(--green);
+  border: none;
+  color: var(--white);
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .buttonGreen {
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+  }
+}
