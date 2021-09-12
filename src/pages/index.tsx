@@ -3,6 +3,7 @@ import Head from "next/head";
 import { getAllFilesMetadata } from "../../lib/mdx";
 import Header from "../components/Header";
 import PrincipalPost from "../components/PrinciplePost";
+import SecondaryPost from "../components/SecondaryPost";
 
 type Post = {
   title: string;
@@ -25,6 +26,7 @@ const Home = ({ principalPost, secondaryPost }: TypePosts) => {
       <Header />
       <main>
         <PrincipalPost posts={principalPost} />
+        <SecondaryPost posts={secondaryPost} />
       </main>
     </>
   );
@@ -36,9 +38,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const posts = await getAllFilesMetadata();
 
   const principalPost = posts.slice(0, 2);
-  const secondaryPost = posts.slice(2, posts.length - 1);
-
-  console.log(principalPost);
+  const secondaryPost = posts.slice(2, posts.length);
 
   return {
     props: {

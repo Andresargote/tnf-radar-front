@@ -11,10 +11,6 @@
   width: 100%;
 }
 
-.principalPost .post picture {
-  border-radius: 0.4rem;
-}
-
 .principalPost .post picture img {
   width: 100%;
   border-radius: 0.4rem;
@@ -34,4 +30,66 @@
 .principalPost .post div div time {
   font-size: 2rem;
   color: var(--black);
+}
+
+.secondaryPost {
+  width: 100%;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 4rem;
+}
+
+.secondaryPost .post {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.secondaryPost .post picture {
+  width: 35%;
+  height: 150px;
+}
+
+.secondaryPost .post picture img {
+  height: 150px;
+  width: 100%;
+  border-radius: 0.4rem;
+  object-fit: cover;
+}
+
+.secondaryPost .post div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.secondaryPost .post div h2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-top: 0;
+  font-family: var(--titles-font);
+}
+
+.secondaryPost .post div h2:hover {
+  text-decoration: underline;
+}
+
+.secondaryPost .post div div time {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 425px) {
+  .principalPost .post div h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+
+  .principalPost .post div div time {
+    font-size: 1.2rem;
+  }
 }
