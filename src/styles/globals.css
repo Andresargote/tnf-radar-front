@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&family=Montserrat:wght@400;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&family=Montserrat:wght@400;700;800;900&display=swap");
 
 :root {
   --general-font: "Manrope", Arial, Helvetica, sans-serif;
@@ -8,10 +8,10 @@
   --fw-n-text: 500;
   --fw-a-data: 300;
 
-  --text-color: #2D3748;
+  --text-color: #2d3748;
   --black: #000000;
-  --footer-color: #1A202C;
-  --green: #38A169;
+  --footer-color: #1a202c;
+  --green: #38a169;
   --gray: #eeeeee;
   --white: #ffffff;
 }
@@ -32,4 +32,21 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+main {
+  max-width: 60%;
+  margin: 4rem auto;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    max-width: 90%;
+  }
 }
