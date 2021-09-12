@@ -39,6 +39,13 @@ main {
   margin: 4rem auto;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 @media screen and (max-width: 1024px) {
   main {
     max-width: 80%;

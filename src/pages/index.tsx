@@ -1,6 +1,7 @@
 import type { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
 import { getAllFilesMetadata } from "../../lib/mdx";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PrincipalPost from "../components/PrinciplePost";
 import SecondaryPost from "../components/SecondaryPost";
@@ -24,10 +25,13 @@ const Home = ({ principalPost, secondaryPost }: TypePosts) => {
   return (
     <>
       <Header />
-      <main>
-        <PrincipalPost posts={principalPost} />
-        <SecondaryPost posts={secondaryPost} />
-      </main>
+      <div className="container">
+        <main>
+          <PrincipalPost posts={principalPost} />
+          <SecondaryPost posts={secondaryPost} />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 };
