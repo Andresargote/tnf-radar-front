@@ -1,0 +1,37 @@
+.principalPost {
+  width: 100%;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 2.9rem;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.principalPost .post {
+  width: 100%;
+}
+
+.principalPost .post picture {
+  border-radius: 0.4rem;
+}
+
+.principalPost .post picture img {
+  width: 100%;
+  border-radius: 0.4rem;
+  object-fit: cover;
+}
+
+.principalPost .post div h2 {
+  font-size: 3.6rem;
+  font-family: var(--titles-font);
+  line-height: 4rem;
+}
+
+.principalPost .post div h2:hover {
+  text-decoration: underline;
+}
+
+.principalPost .post div div time {
+  font-size: 2rem;
+  color: var(--black);
+}
