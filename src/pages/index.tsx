@@ -41,8 +41,8 @@ export default Home;
 export const getStaticProps: GetStaticProps = async () => {
   const posts = await getAllFilesMetadata();
 
-  const principalPost = posts.slice(0, 2);
-  const secondaryPost = posts.slice(2, posts.length);
+  const principalPost = posts.slice(0, 1);
+  const secondaryPost = posts.slice(1, posts.length);
 
   return {
     props: {
