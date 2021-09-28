@@ -8,12 +8,13 @@
   --fw-n-text: 500;
   --fw-a-data: 300;
 
-  --text-color: #2d3748;
+  --text-color: #2a2a2a;
   --black: #000000;
   --footer-color: #1a202c;
   --green: #38a169;
-  --gray: #eeeeee;
+  --gray: #ddd;
   --white: #ffffff;
+  --body: #f2f5f8;
 }
 
 * {
@@ -27,6 +28,7 @@ body {
   font-family: var(--titles-font);
   font-size: 62.5%;
   color: var(--text-color);
+  background-color: var(--body);
 }
 
 a {
