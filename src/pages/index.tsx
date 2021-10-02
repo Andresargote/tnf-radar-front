@@ -3,7 +3,7 @@ import Head from "next/head";
 import { getAllFilesMetadata } from "../../lib/mdx";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import PrincipalPost from "../components/PrinciplePost";
+import PrincipalPost from "../components/PrincipalPost";
 import SecondaryPost from "../components/SecondaryPost";
 
 type Post = {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/components/PrincipalPost.module.css";
+import styles from "../PrincipalPost/PrincipalPost.module.css";
 
 type Post = {
   title: string;

@@ -1,0 +1,33 @@
+.btc,
+.nft {
+    background: var(--white);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    width: fit-content;
+    min-width: 8rem;
+    margin-top: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+}
+
+.btc .circle {
+    background-color: var(--btc);
+}
+
+.nft .circle {
+    background-color: var(--nft);
+}
+
+/*No deberia de llevar un important asi que hay que refactorizar*/
+.category {
+    font-size: 1.4rem !important;
+    color: var(--text-color) !important;
+}

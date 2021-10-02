@@ -8,14 +8,6 @@
   width: 100%;
 }
 
-.principalPost .post picture {
-  filter: drop-shadow(0px 9px 80px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3.75998px 33.4221px rgba(0, 0, 0, 0.107828))
-    drop-shadow(0px 2.01027px 17.869px rgba(0, 0, 0, 0.0894161))
-    drop-shadow(0px 1.12694px 10.0172px rgba(0, 0, 0, 0.075))
-    drop-shadow(0px 0.598509px 5.32008px rgba(0, 0, 0, 0.0605839))
-    drop-shadow(0px 0.249053px 2.21381px rgba(0, 0, 0, 0.0421718));
-}
-
 .principalPost .post picture img {
   width: 100%;
   border-radius: 0.2rem;
@@ -26,16 +18,23 @@
   font-size: 2.4rem;
   font-family: var(--titles-font);
   line-height: 115%;
+
+  margin: 1rem 0rem;
 }
 
 .principalPost .post div h2:hover {
   text-decoration: underline;
 }
 
-.principalPost .post div div time {
+.principalPost .post div div time,
+.principalPost .post div div span {
   font-size: 1.4rem;
   color: #bdbdbd;
   font-weight: 400;
+}
+
+.principalPost .post div div .separator {
+  margin: 0 0.5rem;
 }
 
 .secondaryPost {

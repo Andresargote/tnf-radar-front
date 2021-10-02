@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/components/PrincipalPost.module.css";
+import styles from "./PrincipalPost.module.css";
+import React from "react";
+import Category from "../Category";
 
 type Post = {
   title: string;
@@ -27,9 +29,12 @@ export default function PrincipalPost({ posts }: TypePosts) {
                 <Image src={img} alt={alt} width={800} height={600} />
               </picture>
               <div>
+                <Category category="Cripto" />
                 <h2>{title}</h2>
                 <div>
                   <time dateTime={date}>{date}</time>
+                  <span className={styles.separator}>-</span>
+                  <span>Andres Argote</span>
                 </div>
               </div>
             </a>
